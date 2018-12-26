@@ -85,7 +85,7 @@ def get_city_code(p_state, p_state_name, file, p_date = '2018-11-11'):
 
 
 
-
+# Example:
 df_a = get_city_code(p_state='Pola', p_state_name='Poland', file='output/city_code_pl.csv')
 df_b = get_city_code(p_state=['Pola', 'Germ'], p_state_name=['Poland', 'Germany'], file='output/city_code_pl_de.csv')
 
