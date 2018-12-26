@@ -133,8 +133,11 @@ def get_weather(date_start, date_end, city_id, file):
 	
 
 	
-df_weather = get_weather(date_start = '2018-11-11', date_end = '2018-11-12', 
-                           city_id = ['12566', '10381'], file = 'output/weather_test.csv')
+
+
+# Example:	
+df_weather = get_weather(date_start = '2018-11-11', date_end = '2018-11-12',
+			 city_id = ['12566', '10381'], file = 'output/weather_test.csv')
 
 
 						   
