@@ -71,21 +71,22 @@ def get_weather(date_start, date_end, city_id, file):
                             df_result.loc[:,'Id'] = int(city_id[city_i])
                             
 
-                            ## without providing variable names; unique elements in csv
-                            #f = pathlib.Path(file)
-                            #if not f.exists ():
-                            #    df = pd.DataFrame(columns=['weather'])
-                            #    df.to_csv(file, index = False)
-                            #    
-                            #df_saved = pd.read_csv(file, encoding="utf-8")
-                            #if len(df_saved) == 0:
-                            #    df_saved_2 = df_result
-                            #else:
-                            #    cols_to_use = list(set(df_result.columns) & set(df_saved.columns))
-                            #    df_saved_2 = pd.merge(df_saved, df_result, on=cols_to_use, how='outer').drop_duplicates()
-                            #sort_column = ['Date', 'T(C)', 'Id'] + list((set(df_saved_2.columns) - set(['Date', 'T(C)', 'Id'])))
-                            #df_saved_2 = df_saved_2[sort_column]
-                            #df_saved_2.to_csv(file, index = False, encoding="utf-8")
+                            '''# without providing variable names; unique elements in csv
+                            f = pathlib.Path(file)
+                            if not f.exists ():
+                                df = pd.DataFrame(columns=['weather'])
+                                df.to_csv(file, index = False)
+                                
+                            df_saved = pd.read_csv(file, encoding="utf-8")
+                            if len(df_saved) == 0:
+                                df_saved_2 = df_result
+                            else:
+                                cols_to_use = list(set(df_result.columns) & set(df_saved.columns))
+                                df_saved_2 = pd.merge(df_saved, df_result, on=cols_to_use, how='outer').drop_duplicates()
+                            sort_column = ['Date', 'T(C)', 'Id'] + list((set(df_saved_2.columns) - set(['Date', 'T(C)', 'Id'])))
+                            df_saved_2 = df_saved_2[sort_column]
+                            df_saved_2.to_csv(file, index = False, encoding="utf-8")
+			    '''
               
                             # with providing variable names
                             cols_to_use = list(set(df_result.columns) & set(cols_var))
