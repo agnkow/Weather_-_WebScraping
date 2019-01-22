@@ -1,3 +1,3 @@
 # weather 
 
-(ogimet, web scraping)
+OGIMET - web scraping
