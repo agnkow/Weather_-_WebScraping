@@ -12,4 +12,3 @@ Function **get_weather** returns the weather for the given city id and for the g
 get_weather(date_start, date_end, city_id, file)
 ```
 
-
