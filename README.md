@@ -1,6 +1,6 @@
 # weather 
 
-### **OGIMET** (web scraping)
+* ### OGIMET (web scraping)
 
 Function **get_city_id** returns all cities (weather stations) and their id for the given countries.
 ```python
@@ -11,4 +11,9 @@ Function **get_weather** returns the weather for the given city id and for the g
 ```python
 get_weather(date_start, date_end, city_id, file)
 ```
+
+
+* ### Yahoo Weather New API
+
+The code comes from [dhenxie09/yahoo-weather](https://github.com/dhenxie09/yahoo-weather), but it has been ported to Python 3.
 
