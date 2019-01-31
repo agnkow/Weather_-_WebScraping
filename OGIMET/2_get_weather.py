@@ -1,14 +1,15 @@
 
+import numpy as np
+import pandas as pd
+from datetime import datetime, date, timedelta
+import requests
+from bs4 import BeautifulSoup
+from tqdm import tqdm
+import pathlib
+import csv
+
+
 def get_weather(date_start, date_end, city_id, file):   
-    
-    import numpy as np
-    import pandas as pd
-    from datetime import datetime, date, timedelta
-    import requests
-    from bs4 import BeautifulSoup
-    from tqdm import tqdm
-    import pathlib
-    import csv
     
     max_retries = 5
     cols_var = ['Date','T(C)','Id','Tmax(C)','ffkmh','Snow(cm)','Gustkmh','Tmin(C)','ddd','Td(C)',
