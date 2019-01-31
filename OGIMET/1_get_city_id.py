@@ -1,11 +1,13 @@
 
-def get_city_id(p_state, p_state_name, file, p_date = '2018-11-11'):
+import numpy as np
+import pandas as pd
+import requests
+from bs4 import BeautifulSoup
+from datetime import datetime
 
-    import numpy as np
-    import pandas as pd
-    import requests
-    from bs4 import BeautifulSoup
-    from datetime import datetime
+
+
+def get_city_id(p_state, p_state_name, file, p_date = '2018-11-11'):
     
     max_retries = 5    
     df_code = pd.DataFrame()
