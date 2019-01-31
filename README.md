@@ -1,4 +1,4 @@
-# weather 
+# Weather 
 
 * ### OGIMET (web scraping)
 
