@@ -12,6 +12,15 @@ Function **get_weather** returns the weather for the given city id and for the g
 get_weather(date_start, date_end, city_id, file)
 ```
 
+Examples: 
+```python
+get_city_id(p_state='Pola', p_state_name='Poland', file='output/city_code_pl.csv')
+
+get_weather(date_start = '2018-11-11', date_end = '2018-11-12',
+            city_id = '12566', file = 'output/weather_test.csv')
+```
+
+
 
 * ### Yahoo Weather New API
 
