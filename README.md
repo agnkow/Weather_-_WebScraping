@@ -2,7 +2,7 @@
 
 * ### OGIMET (web scraping)
 
-Function **get_city_id** returns all cities (weather stations) and their id for the given countries.
+Function **get_city_id** returns all cities (weather stations) and their ids for the given countries.
 ```python
 get_city_id(p_state, p_state_name, file)
 ```
